@@ -1,1 +1,113 @@
 @charset "UTF-8"
+/*===============
+共通部分
+================*/
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family:  "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+h1,h2,h3,h4 {
+  margin: 0;
+  font-weight: 700;
+  color: #505050;
+}
+h3 {
+  font-size: 25px;
+  line-height: 100%;
+}
+p {
+  margin: 0;
+  font-weight: 500;
+  color: #505050;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  font-weight: 500;
+  color: #505050;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+* {
+  outline: 2px solid red;
+/*===================
+HEADER
+===================*/
+header {
+  height: 50px;
+}
+.header-content {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title a {
+  font-size: 18px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 9.51px;
+  height: 100%;
+}
+.nav-list a {
+  font-size: 14px;
+  line-height: 45px;
+  display: block;
+  height: 100%;
+  padding-top: 5px;
+}
+.title img {
+  width: 25.49px;
+  display: block;
+}
+.nav-list ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-list {
+  position: absolute;
+  right: -40px; /* ← inner の padding に合わせて調整 */
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/*==========================
+レスポンシブ対応
+==========================*/
+@media (max-width: 1070px) {
+  .inner {
+    padding: 0 5.33%;
+  }
+}
+@media (max-width: 660px) {
+  /*共通部分*/
+
+  /*HEADER*/
+  .nav-list {
+    display: none;
+  }
+  .title a {
+    font-size: 20px;
+  }
+}
