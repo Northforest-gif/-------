@@ -9,10 +9,15 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  margin: 0;
   font-family:  "Noto Sans JP", sans-serif;
   font-weight: 500;
   font-style: normal;
   background-color: #FFFFFF;
+}
+.container {
+  width: 100%;
+  margin: 0;
 }
 h1,h2,h3,h4 {
   margin: 0;
@@ -20,7 +25,7 @@ h1,h2,h3,h4 {
   color: #505050;
 }
 h3 {
-  font-size: 25px;
+  font-size: 1.55rem;
   line-height: 100%;
 }
 p {
@@ -43,55 +48,15 @@ img {
   margin: 0 auto;
   padding: 0 100px;
 }
-* {
-  outline: 2px solid red;
+
 /*===================
 HEADER
 ===================*/
-header {
-  height: 50px;
-}
-.header-content {
-  position: relative;
-  margin: 0;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.title a {
-  font-size: 18px;
-  line-height: 50px;
-  display: flex;
-  align-items: center;
-  gap: 9.51px;
-  height: 100%;
-}
-.nav-list a {
-  font-size: 14px;
-  line-height: 45px;
-  display: block;
-  height: 100%;
-  padding-top: 5px;
-}
-.title img {
-  width: 25.49px;
-  display: block;
-}
-.nav-list ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.nav-list {
-  position: absolute;
-  right: -40px; /* ← inner の padding に合わせて調整 */
-  top: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
+
+/*==========================
+FIRST-VIEW
+==========================*/
+
 /*==========================
 レスポンシブ対応
 ==========================*/
@@ -102,7 +67,7 @@ header {
 }
 @media (max-width: 660px) {
   /*共通部分*/
-
+ 
   /*HEADER*/
   .nav-list {
     display: none;
