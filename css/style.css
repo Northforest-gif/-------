@@ -1,78 +1,148 @@
-@charset "UTF-8"
+@charset "UTF-8";
 /*===============
 共通部分
 ================*/
 html {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
+  padding: 0;
   font-family:  "Noto Sans JP", sans-serif;
-  font-weight: 500;
   font-style: normal;
   background-color: #FFFFFF;
 }
-.container {
+#container {
   width: 100%;
   margin: 0;
 }
-h1,h2,h3,h4 {
+h1,h2,h3 {
   margin: 0;
   font-weight: 700;
   color: #505050;
 }
-h3 {
-  font-size: 1.55rem;
+h2 {
+  font-size: 2.5rem;
   line-height: 100%;
+  position: relative;
+  text-align: center;
 }
+
 p {
   margin: 0;
-  font-weight: 500;
   color: #505050;
 }
 a {
   text-decoration: none;
   margin: 0;
   font-weight: 500;
+  line-height: 100%;
   color: #505050;
 }
 img {
   max-width: 100%;
+  height: auto;
   display: block;
+}
+ul {
+  list-style: none; 
+}
+.green-bg {
+  background-color: #E6F4F5;
 }
 .inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding-inline: 10rem;
 }
 
-/*===================
+/*===================* {
+  outline: 1px solid red;
+}
 HEADER
 ===================*/
-
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 5rem;
+  background-color: #FFFFFF;
+}
+.header-inner {
+  max-width: 1080px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: calc(99 /1080 * 100vw);
+  padding-right: calc(60 / 1080 * 100vw);
+}
+.title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: 0.4s ease;
+}
+.title:hover {
+  opacity: .5;
+}
+.title-icon {
+  height: 100%;
+  padding-right: 9.4px;
+  display: flex;
+  align-items: center;
+}
+.title-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.title-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+}
+.header-nav {
+  height: 100%;
+}
+.header-nav-list {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: calc(10 / 1080 * 100vw);
+}
+.header-nav-button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 0.4rem;
+}
+.header-nav a {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 /*==========================
 FIRST-VIEW
 ==========================*/
+#first-view {
+  padding-top: 5rem;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 
 /*==========================
 レスポンシブ対応
 ==========================*/
-@media (max-width: 1070px) {
-  .inner {
-    padding: 0 5.33%;
-  }
-}
 @media (max-width: 660px) {
   /*共通部分*/
  
   /*HEADER*/
-  .nav-list {
+  .header-nav {
     display: none;
   }
-  .title a {
-    font-size: 20px;
-  }
+ 
 }
