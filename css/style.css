@@ -28,7 +28,15 @@ h2 {
   position: relative;
   text-align: center;
 }
-
+h2 img {
+  margin: 0 2rem;
+  vertical-align: middle;
+}
+.sub-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 p {
   margin: 0;
   color: #505050;
@@ -62,9 +70,9 @@ ul {
 .sp-none {
   display: block;
 }
-/*===================* {
-  outline: 1px solid red;
-}
+* { outline: 1px solid red;}
+/*===================
+ * { outline: 1px solid red;}
 HEADER
 ===================*/
 header {
@@ -191,6 +199,7 @@ MAIN
 .main-textarea p {
   font-size: 1.8rem;
   line-height: calc(33 / 18);
+  font-weight: 500;
   text-align: center;
   padding-top: 1.5rem;
 }
@@ -201,13 +210,88 @@ MAIN
   z-index: 100;
 }
 /*==========================
+ABOUT
+==========================*/
+#about {
+  padding-block: 7.1rem 6.8rem;
+}
+.about-content {
+  width: 100%;
+  margin-top: 5.2rem;
+  display: grid;
+  gap: 5rem;
+}
+.about-item {
+  width: 100%;
+  display: flex;
+}
+.reverse-item {
+  flex-direction: row-reverse;
+}
+.about-item-img {
+  width: 50%;
+}
+.about-content-text {
+  width: 50%;
+  height: auto;
+  margin-top: 4.9rem;
+  padding-left: 4.4rem;
+}
+.about-content-text h3 {
+  font-size: 2.2rem;
+  line-height: calc(33 / 22);
+}
+.about-content-text p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: calc(33 / 18);
+  margin-top: 1.9rem;
+}
+.reverse-text {
+  margin-top: 4.8rem;
+  padding-left: 0;
+}
+/*==========================
+SERVICE
+==========================*/
+#service {
+  padding-block: 7.1rem 5.9rem;
+}
+.service-content {
+  margin-top: 5.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+.service-item-text {
+  margin-top: 1.9rem;
+}
+.service-item-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: calc(25 / 20);
+  text-align: center;
+}
+.service-item-text p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: calc(30 / 17);
+  padding-top: 0.8rem;
+}
+/*==========================
 レスポンシブ対応
 ==========================*/
 @media (max-width: 1079px) {
+  /*共通*/
+  .inner {
+    padding-inline: calc(100 / 1080 * 100vw);
+  }
+  /*HEADER*/
   .header-inner {
     padding-left: calc(99 / 1080 * 100vw);
     padding-right: calc(60 / 1080 * 100vw);
   }
+  /*MAIN*/
   .main-textarea h2 {
     font-size: calc(30 / 1080 * 100vw);
     line-height: calc(50 / 30);
@@ -224,6 +308,38 @@ MAIN
     top: 69%;
     right: 7%;  
     z-index: 100;
+  }
+  /*ABOUT*/
+  .about-content-text {
+    margin-top: calc(49 / 1080 * 100vw);
+    padding-left: calc(44 / 1080 * 100vw);
+  }
+  .about-content-text h3 {
+    font-size: calc(22 / 1080 * 100vw);
+    line-height: calc(33 / 22);
+  }
+  .about-content-text p {
+    font-size: calc(18 / 1080 *100vw);
+    line-height: calc(33 / 18);
+    margin-top: calc(19 / 1080 * 100vw);
+  }
+  .reverse-text {
+    margin-top: calc(48 / 1080 * 100vw);
+    padding-left: 0;
+  }
+  /*SERVICE*/
+  .service-content {
+    gap: calc(50 / 1080 * 100vw);
+  }
+  .service-item-text {
+    margin-top: calc(19 / 1080 * 100vw);
+  }
+  .service-item-text h3 {
+    font-size: calc(20 / 1080 * 100vw);
+  }
+  .service-item-text p {
+    font-size: calc(17 / 1080 * 100vw);
+    padding-top: calc(8 / 1080 * 100vw);
   }
 }
 @media (max-width: 770px) {
@@ -286,5 +402,61 @@ MAIN
   .decoration {
     top: 76%;
     right: 7.8%; 
+  }
+  /*ABOUT*/
+  #about {
+    padding-block: 5.8rem 3.5rem;
+  }
+  .about-content {
+    width: 100%;
+    margin-top: calc(46 / 375 * 100vw);
+    display: grid;
+    gap: 4.2rem;
+    }
+  .about-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about-item-img {
+    width: 100%;
+  }
+  .about-content-text {
+    width: 100%;
+    height: auto;
+   margin-top: calc(26 / 375 * 100vw);
+   padding-left: 0;
+  }
+  .about-content-text h3 {
+    font-size: calc(20 / 375 * 100vw);
+    line-height: calc(30 / 20);
+    text-align: center;
+  }
+  .about-content-text p {
+    font-size: calc(16 / 375 * 100vw);
+    line-height: calc(30 / 16);
+    margin-top: calc(8 / 375 * 100vw);
+  }
+  /*SERVICE*/
+  #service {
+    padding-block: 5rem 3.9rem;
+  }
+  .service-content {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(39 / 375 * 100vw);
+  }
+  .service-item-text {
+    margin-top: calc(30 / 375 * 100vw);
+  }
+  .service-item-text h3 {
+    font-size: calc(20 / 375 * 100vw);
+    line-height: calc(30 / 20);
+  }
+  .service-item-text p {
+    font-size: calc(16 / 375 * 100vw);
+    line-height: calc(30 / 16);
+    padding-top: calc(7 / 375 * 100vw);
   }
 }
