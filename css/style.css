@@ -70,7 +70,7 @@ ul {
 .sp-none {
   display: block;
 }
-* { outline: 1px solid red;}
+
 /*===================
  * { outline: 1px solid red;}
 HEADER
@@ -279,6 +279,51 @@ SERVICE
   padding-top: 0.8rem;
 }
 /*==========================
+NEWS
+==========================*/
+#news {
+  padding-block: 7rem 6.8rem;
+}
+.news-list {
+  width: 100%;
+  margin-top: 5rem;
+  border-top: 1px solid #707070;
+}
+.news-item {
+  width: 100%;
+  border-bottom: 1px solid #707070;
+}
+.news-item a{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 1.9rem;
+  padding-block: 1.9rem 2rem;
+  transition: 0.4s ease;
+}
+.news-item a:hover {
+  opacity: .5;
+}
+.date {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+.news-title {
+  width: 16rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: #0D96A0;
+  margin-left: 2.5rem;
+}
+.news-content {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 100%;
+  padding-left: 4.9rem;
+}
+/*==========================
 レスポンシブ対応
 ==========================*/
 @media (max-width: 1079px) {
@@ -340,6 +385,23 @@ SERVICE
   .service-item-text p {
     font-size: calc(17 / 1080 * 100vw);
     padding-top: calc(8 / 1080 * 100vw);
+  }
+  /*NEWS*/
+  .news-item a{
+    padding-left: calc(19 / 1080 * 100vw);
+    padding-block: calc(19 / 1080 * 100vw) calc(20 / 1080 * 100vw);
+  }
+  .date {
+    font-size: calc(17 / 1080 * 100vw);
+  }
+  .news-title {
+    width: calc(160 / 1080 * 100vw);
+    font-size: calc(20 / 1080 * 100vw);
+    margin-left: calc(25 / 1080 * 100vw);
+  }
+  .news-content {
+    font-size: calc(17 / 1080 * 100vw);
+    padding-left: calc(49 / 1080 * 100vw);
   }
 }
 @media (max-width: 770px) {
@@ -458,5 +520,35 @@ SERVICE
     font-size: calc(16 / 375 * 100vw);
     line-height: calc(30 / 16);
     padding-top: calc(7 / 375 * 100vw);
+  }
+  /*NEWS*/
+  #news {
+    padding-block: 5rem;
+  }
+  .news-item a{
+    display: block;
+    height: 100%;
+    align-items: center;
+    padding-inline: calc(10 / 375 * 100vw) calc(3 / 375 * 100vw);
+    padding-block: 2.7rem 2.8rem;
+  }
+  .date {
+    font-size: calc(17 / 375 * 100vw);
+    line-height: calc(25 / 17);
+    width: 100%;
+  }
+  .news-title {
+    font-size: calc(20 / 375 * 100vw);
+    line-height: calc(25 / 20);
+    padding-top: calc(2 / 375 * 100vw);
+    margin-left: 0;
+    width: 100%;
+  }
+  .news-content {
+    font-size: calc(16 / 375 * 100vw);
+    line-height: calc(24 / 16);
+    padding-top: calc(6 / 375 * 100vw);
+    padding-left: 0;
+    width: 100%;
   }
 }
