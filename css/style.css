@@ -364,7 +364,7 @@ LOCATION
   font-size: 2.5rem;
   font-weight: 700;
   line-height: calc(40 / 25);
-  color: #0D96A0;
+  color: #0D96A0 !important;
 }
 .mail-address {
   padding-top: 0.8rem;
