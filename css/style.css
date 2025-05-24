@@ -405,6 +405,7 @@ label {
   font-size: 2rem;
   font-weight: 700;
   line-height: calc(44 / 20);
+  color: #505050;
 }
 input[type="text"],
 input[type="email"]{
@@ -418,7 +419,7 @@ textarea {
   background: white;
   flex: 1;
   height: 30rem;
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 1.8rem;
 }
 .button {
@@ -634,7 +635,7 @@ FOOTER
   }
   textarea {
     height: calc(300 / 1080 * 100vw);
-    padding: calc(10 / 1080 * 100vw);
+    padding: calc(15 / 1080 * 100vw);
     font-size: calc(18 / 1080 * 100vw);
   }
   .button {
@@ -903,6 +904,7 @@ FOOTER
     height:  calc(300 / 375 * 100vw);
     font-size:  calc(16 / 375 * 100vw);
     height:  calc(300 / 375 * 100vw);
+    padding: calc(15 / 375 * 100vw);
   }
   .button {
     text-align: center;
