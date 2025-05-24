@@ -263,6 +263,9 @@ SERVICE
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
 }
+.service-item-img {
+  width: 100%;
+}
 .service-item-text {
   margin-top: 1.9rem;
 }
@@ -537,6 +540,10 @@ FOOTER
   .service-content {
     gap: calc(50 / 1080 * 100vw);
   }
+  .service-item-img {
+    width: calc(260 / 1080 * 100vw);
+    height: calc(200 / 1080 * 100vw);
+  }
   .service-item-text {
     margin-top: calc(19 / 1080 * 100vw);
   }
@@ -764,6 +771,10 @@ FOOTER
     display: grid;
     grid-template-columns: 1fr;
     gap: calc(39 / 375 * 100vw);
+  }
+  .service-item-img {
+    width: calc(335 / 375 * 100vw);
+    height: calc(200 / 375 * 100vw);
   }
   .service-item-text {
     margin-top: calc(30 / 375 * 100vw);
