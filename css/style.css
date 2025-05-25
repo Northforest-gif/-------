@@ -325,6 +325,7 @@ NEWS
   font-weight: 500;
   line-height: 100%;
   padding-left: 4.9rem;
+  flex: 1;
 }
 /*==========================
 LOCATION
@@ -360,14 +361,21 @@ LOCATION
 .tel-number {
   padding-top: 1.4rem;
 }
-.tel-number span {
+a[href^="tel:"] {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: calc(40 / 25);
+  text-decoration: none !important;
   color: #0D96A0 !important;
 }
 .mail-address {
   padding-top: 0.8rem;
+}
+.mail-address a {
+  transition: 0.4s;
+}
+.mail-address a:hover {
+  opacity: .5;
 }
 .hospital-information {
   border-block: 1px solid #707070;
@@ -598,7 +606,7 @@ FOOTER
   .tel-number {
     padding-top: calc(14 / 1080 * 100vw);
   }
-  .tel-number span {
+  a[href^="tel:"] {
     font-size: calc(25 / 1080 * 100vw);
   }
   .mail-address {
@@ -854,7 +862,7 @@ FOOTER
   .tel-number {
     padding-top: calc(5 / 375 * 100vw);
   }
-  .tel-number span {
+  a[href^="tel:"] {
     font-size: calc(25 / 375 * 100vw);
     line-height: calc(40 / 25);
   }
