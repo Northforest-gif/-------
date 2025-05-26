@@ -56,6 +56,9 @@ img {
 ul {
   list-style: none; 
 }
+picture img {
+  width: 100%;
+}
 .green-bg {
   background-color: #E6F4F5;
 }
@@ -699,12 +702,6 @@ FOOTER
     padding: 0;
   }
   /*FIRST-VIEW*/
-  .fv-img {
-    text-align: center;
-  }
-  .fv-img img {
-    display: inline-block;
-  }
   .fv-text-bg {
     top: unset;
     left: 0;
@@ -760,10 +757,6 @@ FOOTER
   }
   .about-item-img {
     width: 100%;
-    text-align: center;
-  }
-  .about-item img {
-    display: inline-block;
   }
   .about-content-text {
     width: 100%;
@@ -794,10 +787,6 @@ FOOTER
   .service-item-img {
     width: 100%;
     height: calc(200 / 375 * 100vw);
-    text-align: center;
-  }
-  .service-item-img img {
-    display: inline-block;
   }
   .service-item-text {
     margin-top: calc(30 / 375 * 100vw);
