@@ -371,6 +371,13 @@ a[href^="tel:"] {
   text-decoration: none !important;
   color: #0D96A0 !important;
 }
+.tel-link {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: calc(40 / 25);
+  text-decoration: none !important;
+  color: #0D96A0 !important;
+}
 .mail-address {
   padding-top: 0.8rem;
 }
