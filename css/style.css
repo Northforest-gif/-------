@@ -457,6 +457,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   opacity: .5;
+  cursor: pointer !important;
 }
 /*==========================
 FOOTER
