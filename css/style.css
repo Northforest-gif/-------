@@ -534,7 +534,7 @@ FOOTER
     color: #0D96A0;
   }
   .main-textarea p {
-    font-size: clamp(1.4rem, calc(17 / 1080 * 100vw), 1.7rem);
+    font-size: clamp(1.4rem, calc(18 / 1080 * 100vw), 1.8rem);
     line-height: calc(33 / 18);
     text-align: center;
     padding-top: 1.5rem;
@@ -758,6 +758,7 @@ FOOTER
   .decoration {
     top: 76%;
     right: 7.8%; 
+    width: calc(68.35 / 375 * 100vw);
   }
   /*ABOUT*/
   #about {
