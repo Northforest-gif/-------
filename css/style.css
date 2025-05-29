@@ -416,6 +416,8 @@ form {
 }
 .area {
   display: flex;
+}
+.space {
   margin-bottom: 2.6rem;
 }
 label {
@@ -429,7 +431,7 @@ input[type="text"],
 input[type="email"]{
   background: white;
   padding: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   height: 4rem;
   flex: 1;
 }
@@ -438,11 +440,12 @@ textarea {
   flex: 1;
   height: 30rem;
   padding: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+   line-height: calc(30 / 17);
 }
 .button {
   text-align: center;
-  padding-top: 2.4rem;
+  margin-top: 5rem;
 }
 input[type="submit"] {
   color: #fff;
@@ -643,9 +646,9 @@ FOOTER
   form {
     margin-top: calc(39 / 1080 * 100vw);
   }
-  .area {
-    margin-bottom: calc(26 / 1080 * 100vw);
-  }
+  .space {
+  margin-bottom: calc(26 / 1080 * 100vw);
+}
   label {
     width: calc(169 / 1080 * 100vw);
     font-size: clamp(1.6rem, calc(20 / 1080 * 100vw), 2rem);
@@ -653,16 +656,16 @@ FOOTER
   input[type="text"],
   input[type="email"]{
     padding: calc(10 / 1080 * 100vw);
-    font-size: calc(18 / 1080 * 100vw);
+    font-size: clamp(1.4rem, calc(17 / 1080 * 100vw), 1.7rem);
     height: calc(40 / 1080 * 100vw);
   }
   textarea {
     height: calc(300 / 1080 * 100vw);
     padding: calc(15 / 1080 * 100vw);
-    font-size: calc(18 / 1080 * 100vw);
+    font-size: clamp(1.4rem, calc(17 / 1080 * 100vw), 1.7rem);
   }
   .button {
-    padding-top: calc(24 / 1080 * 100vw);
+    margin-top: calc(50 / 1080 * 100vw);
   }
   input[type="submit"] {
     font-size: calc(25 / 1080 * 100vw);
@@ -915,7 +918,9 @@ FOOTER
   }
   .area {
     display: block;
-    margin-bottom: calc(17 / 375 * 100vw);
+  }
+  .space {
+    margin-bottom: calc(17.7 / 375 * 100vw);
   }
   label {
     width: 100%;
@@ -934,12 +939,13 @@ FOOTER
     width: 100%;
     height:  calc(300 / 375 * 100vw);
     font-size:  calc(16 / 375 * 100vw);
+    line-height: calc(30 / 16);
     height:  calc(300 / 375 * 100vw);
     padding: calc(15 / 375 * 100vw);
   }
   .button {
     text-align: center;
-    padding-top: calc(33 / 375 * 100vw);
+    margin-top: calc(47.5 / 375 * 100vw);
   }
   input[type="submit"] {
     font-size: calc(20 / 375 * 100vw);
