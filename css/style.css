@@ -17,6 +17,9 @@ body {
   width: 100%;
   margin: 0;
 }
+section {
+  scroll-margin-top: 5rem;
+}
 h1,h2,h3 {
   margin: 0;
   font-weight: 700;
