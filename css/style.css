@@ -693,6 +693,9 @@ FOOTER
     gap: calc(12 / 1080 * 100vw);
     margin-top: calc(8 / 1080 * 100vw);
   }
+  .icon-twitter {
+    width: clamp(1.7rem, calc(20 / 1080 * 100vw), 2rem);
+  }
 }
 @media (max-width: 770px) {
   /*共通部分*/
@@ -987,5 +990,8 @@ FOOTER
   .sns-list {
     gap: calc(12 / 375 * 100vw);
     margin-top: calc(36 / 375 * 100vw);
+  }
+  .icon-twitter {
+    width: calc(20 / 375 * 100vw);
   }
 }
