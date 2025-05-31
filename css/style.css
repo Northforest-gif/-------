@@ -243,7 +243,7 @@ ABOUT
 .about-content-text {
   width: 50%;
   height: auto;
-  margin-top: 4.9rem;
+   margin-top: 4.9rem;
   padding-left: 4.4rem;
 }
 .about-content-text h3 {
@@ -261,7 +261,12 @@ ABOUT
   padding-left: 0;
 }
 /*==========================
-SERVICE
+SERVICE margin-top: 4.8rem;
+  padding-left: 0;
+  width: 50%;
+  height: auto;
+  margin-top: 4.9rem;
+  padding-left: 4.4rem;
 ==========================*/
 #service {
   padding-block: 7.1rem 5.9rem;
@@ -562,7 +567,6 @@ FOOTER
   .about-item {
     align-items: center;
     justify-content: center;
-    gap: calc(46 / 1080 * 100vw);
   }
   .about-content-text {
     margin: 0;
