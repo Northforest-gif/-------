@@ -577,7 +577,7 @@ FOOTER
     
   }
   .about-content-text p {
-    font-size: clamp(1.6rem, calc(18 / 1080 *100vw), 1.8rem);
+    font-size: clamp(1.58rem, calc(18 / 1080 *100vw), 1.8rem);
     line-height: calc(33 / 18);
     margin-top: calc(19 / 1080 * 100vw);
   }
