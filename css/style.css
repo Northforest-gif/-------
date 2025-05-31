@@ -527,7 +527,7 @@ FOOTER
 @media (max-width: 1079px) {
   /*共通*/
   h2 {
-    font-size: clamp(2.2rem, calc(25 / 1080 * 100vw), 2.5rem);
+    font-size: clamp(2.3rem, calc(25 / 1080 * 100vw), 2.5rem);
   }
   h2 img {
     margin: 0 calc(20 / 1080 * 100vw);
@@ -538,7 +538,7 @@ FOOTER
   }
   /*HEADER*/
   .header-inner {
-    padding-left: calc(99 / 1080 * 100vw);
+    padding-left: calc(80 / 1080 * 100vw);
     padding-right: calc(60 / 1080 * 100vw);
   }
   /*MAIN*/
@@ -581,7 +581,7 @@ FOOTER
     
   }
   .about-content-text p {
-    font-size: clamp(1.58rem, calc(18 / 1080 *100vw), 1.8rem);
+    font-size: clamp(1.6rem, calc(18 / 1080 *100vw), 1.8rem);
     line-height: calc(33 / 18);
     margin-top: calc(19 / 1080 * 100vw);
   }
