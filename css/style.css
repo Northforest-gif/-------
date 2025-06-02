@@ -68,9 +68,10 @@ picture img {
   background-color: #E6F4F5;
 }
 .inner {
-  max-width: 1080px;
+  max-width: 940px;
   margin: 0 auto;
-  padding-inline: 10rem;
+  padding-inline: 3rem;
+  width: 100%;
 }
 .pc-none {
   display: none;
@@ -214,7 +215,7 @@ MAIN
 .decoration {
   position: absolute;
   top: 11.3rem;
-  right: 7.6rem; 
+  right: .6rem; 
   z-index: -100 !important;
 }
 /*==========================
@@ -533,9 +534,6 @@ FOOTER
     margin: 0 calc(20 / 1080 * 100vw);
     width: clamp(2.3rem, calc(25.49 / 1080 * 100vw), 2.6rem);
   }
-  .inner {
-    padding-inline: calc(50 / 1080 * 100vw);
-  }
   /*HEADER*/
   .header-inner {
     padding-left: calc(80 / 1080 * 100vw);
@@ -548,7 +546,7 @@ FOOTER
     color: #0D96A0;
   }
   .main-textarea p {
-    font-size: clamp(1.59rem, calc(18 / 1080 * 100vw), 1.8rem);
+    font-size: clamp(1.55rem, calc(18 / 1080 * 100vw), 1.8rem);
     line-height: calc(33 / 18);
     text-align: center;
     padding-top: 1.5rem;
@@ -556,7 +554,7 @@ FOOTER
   .decoration {
     position: absolute;
     top: 69%;
-    right: 7%;  
+    right: 5%;  
     z-index: 100;
     width: calc(83.75 / 1080 * 100vw);
   }
@@ -600,7 +598,7 @@ FOOTER
     font-size: clamp(1.8rem, calc(20 / 1080 * 100vw), 2rem);
   }
   .service-item-text p {
-    font-size: clamp(1.47rem, calc(17 / 1080 * 100vw), 1.7rem);
+    font-size: clamp(1.43rem, calc(17 / 1080 * 100vw), 1.7rem);
     padding-top: calc(8 / 1080 * 100vw);
   }
   /*NEWS*/
@@ -719,11 +717,6 @@ FOOTER
     width: clamp(1.7rem, calc(20 / 1080 * 100vw), 2rem);
   }
 }
-@media (max-width: 900px) {
-  .inner {
-    padding-inline: calc(25 / 900 * 100vw);
-  }
-}
 @media (max-width: 770px) {
   /*共通部分*/
   h2 {
@@ -733,14 +726,14 @@ FOOTER
     margin: 0 calc(20 / 375 * 100vw);
     width: calc(25.49 / 375 * 100vw);
   }
-  .inner {
-    padding-inline: calc(20 / 375 * 100vw);
-  }
   .pc-none {
     display: block;
   }
   .sp-none {
     display: none;
+  }
+  .inner {
+    padding-inline: calc(20 / 375 * 100vw);
   }
   /*HEADER*/
   .header-inner {
