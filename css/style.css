@@ -534,7 +534,7 @@ FOOTER
     width: clamp(2.3rem, calc(25.49 / 1080 * 100vw), 2.6rem);
   }
   .inner {
-    padding-inline: calc(30 / 1080 * 100vw);
+    padding-inline: calc(50 / 1080 * 100vw);
   }
   /*HEADER*/
   .header-inner {
@@ -573,7 +573,7 @@ FOOTER
     padding: 0;
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
   }
   .about-content-text h3 {
     font-size: clamp(1.9rem, calc(22 / 1080 * 100vw), 2.2rem);
@@ -587,6 +587,7 @@ FOOTER
   }
   .reverse-text {
     margin-top: 0;
+     justify-content: left;
   }
   /*SERVICE*/
   .service-content {
@@ -716,6 +717,11 @@ FOOTER
   }
   .icon-twitter {
     width: clamp(1.7rem, calc(20 / 1080 * 100vw), 2rem);
+  }
+}
+@media (max-width: 900px) {
+  .inner {
+    padding-inline: calc(25 / 900 * 100vw);
   }
 }
 @media (max-width: 770px) {
