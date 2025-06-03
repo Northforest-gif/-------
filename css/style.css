@@ -593,7 +593,7 @@ FOOTER
     font-size: calc(20 / 920 * 100vw);
   }
   .service-item-text p {
-    font-size: calc(17 / 920 * 100vw);
+    font-size: calc(16.7 / 920 * 100vw);
     padding-top: calc(8 / 920 * 100vw);
   }
   /*NEWS*/
