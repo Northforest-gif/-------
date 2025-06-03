@@ -68,9 +68,9 @@ picture img {
   background-color: #E6F4F5;
 }
 .inner {
-  max-width: 940px;
+  max-width: 920px;
   margin: 0 auto;
-  padding-inline: 3rem;
+  padding-inline: 2rem;
   width: 100%;
 }
 .pc-none {
@@ -262,12 +262,7 @@ ABOUT
   padding-left: 0;
 }
 /*==========================
-SERVICE margin-top: 4.8rem;
-  padding-left: 0;
-  width: 50%;
-  height: auto;
-  margin-top: 4.9rem;
-  padding-left: 4.4rem;
+SERVICE 
 ==========================*/
 #service {
   padding-block: 7.1rem 5.9rem;
@@ -525,28 +520,28 @@ FOOTER
 /*==========================
 レスポンシブ対応
 ==========================*/
-@media (max-width: 1079px) {
+@media (max-width: 920px) {
   /*共通*/
   h2 {
-    font-size: clamp(2.3rem, calc(25 / 1080 * 100vw), 2.5rem);
+    font-size: calc(25 / 920 * 100vw);
   }
   h2 img {
-    margin: 0 calc(20 / 1080 * 100vw);
-    width: clamp(2.3rem, calc(25.49 / 1080 * 100vw), 2.6rem);
+    margin: 0 calc(20 / 920 * 100vw);
+    width: calc(25.49 / 920 * 100vw);
   }
   /*HEADER*/
   .header-inner {
-    padding-left: calc(80 / 1080 * 100vw);
-    padding-right: calc(60 / 1080 * 100vw);
+    padding-left: calc(80 / 920 * 100vw);
+    padding-right: calc(60 / 920 * 100vw);
   }
   /*MAIN*/
   .main-textarea h2 {
-    font-size: clamp(2.8rem, calc(30 / 1080 * 100vw), 3rem);
+    font-size: calc(30 / 920 * 100vw);
     line-height: calc(50 / 30);
     color: #0D96A0;
   }
   .main-textarea p {
-    font-size: clamp(1.55rem, calc(18 / 1080 * 100vw), 1.8rem);
+    font-size: calc(18 / 920 * 100vw);
     line-height: calc(33 / 18);
     text-align: center;
     padding-top: 1.5rem;
@@ -556,11 +551,11 @@ FOOTER
     top: 69%;
     right: 5%;  
     z-index: 100;
-    width: calc(83.75 / 1080 * 100vw);
+    width: calc(83.75 / 920 * 100vw);
   }
   /*ABOUT*/
   .about-content {
-    gap: calc(50 / 1080 * 100vw);
+    gap: calc(50 / 920 * 100vw);
   }
   .about-item {
     align-items: center;
@@ -574,14 +569,14 @@ FOOTER
     justify-content: right;
   }
   .about-content-text h3 {
-    font-size: clamp(1.9rem, calc(22 / 1080 * 100vw), 2.2rem);
+    font-size: calc(22 / 920 * 100vw);
     line-height: calc(33 / 22);
     
   }
   .about-content-text p {
-    font-size: clamp(1.6rem, calc(18 / 1080 *100vw), 1.8rem);
+    font-size: calc(18 / 920 *100vw);
     line-height: calc(33 / 18);
-    margin-top: calc(19 / 1080 * 100vw);
+    margin-top: calc(19 / 920 * 100vw);
   }
   .reverse-text {
     margin-top: 0;
@@ -589,40 +584,40 @@ FOOTER
   }
   /*SERVICE*/
   .service-content {
-    gap: calc(45 / 1080 * 100vw);
-  }
+  gap: calc(50 / 920 * 100vw);
+}
   .service-item-text {
-    margin-top: calc(19 / 1080 * 100vw);
+    margin-top: calc(19 / 920 * 100vw);
   }
   .service-item-text h3 {
-    font-size: clamp(1.8rem, calc(20 / 1080 * 100vw), 2rem);
+    font-size: calc(20 / 920 * 100vw);
   }
   .service-item-text p {
-    font-size: clamp(1.43rem, calc(17 / 1080 * 100vw), 1.7rem);
-    padding-top: calc(8 / 1080 * 100vw);
+    font-size: calc(17 / 920 * 100vw);
+    padding-top: calc(8 / 920 * 100vw);
   }
   /*NEWS*/
   .news-item a{
-    padding-left: calc(19 / 1080 * 100vw);
-    padding-block: calc(19 / 1080 * 100vw) calc(20 / 1080 * 100vw);
+    padding-left: calc(19 / 920 * 100vw);
+    padding-block: calc(19 / 920 * 100vw) calc(20 / 920 * 100vw);
   }
   .date {
-    font-size: clamp(1.5rem, calc(17 / 1080 * 100vw), 1.7rem);
+    font-size: calc(17 / 920 * 100vw);
   }
   .news-title {
-    width: calc(200 / 1080 * 100vw);
-    font-size: clamp(1.7rem, calc(20 / 1080 * 100vw), 2rem);
+    width: calc(200 / 920 * 100vw);
+    font-size: calc(20 / 920 * 100vw);
     margin-left: calc(25 / 1080 * 100vw);
   }
   .news-content {
-    font-size: clamp(1.5rem, calc(17 / 1080 * 100vw), 1.7rem);
-    padding-left: calc(40 / 1080 * 100vw);
+    font-size: calc(17 / 920 * 100vw);
+    padding-left: calc(40 / 920 * 100vw);
   }
   /*LOCATION*/
   .contact-content {
     margin-top: 5rem;
     display: flex;
-    gap: calc(46 / 1080 * 100vw);
+    gap: calc(46 / 920 * 100vw);
   }
   iframe {
     width: 100%;
@@ -632,89 +627,89 @@ FOOTER
     width: 50%;
   }
   .access-information h3 {
-    font-size: clamp(2rem, calc(22 / 1080 * 100vw), 2.2rem);
+    font-size: calc(22 / 920 * 100vw);
   }
   .contact-information {
-    padding-top: calc(14 / 1080 * 100vw);
-    padding-bottom: calc(27 / 1080 * 100vw);
+    padding-top: calc(14 / 920 * 100vw);
+    padding-bottom: calc(27 / 920 * 100vw);
   }
   .contact-information p {
-    font-size: clamp(1.6rem, calc(18 / 1080 *100vw), 1.8rem);
+    font-size: calc(18 / 920 *100vw);
   }
   .tel-number {
-    padding-top: calc(14 / 1080 * 100vw);
+    padding-top: calc(14 / 920 * 100vw);
   }
   a[href^="tel:"] {
-    font-size: calc(25 / 1080 * 100vw);
+    font-size: calc(25 / 920 * 100vw);
   }
   .mail-address {
-    padding-top: calc(8 / 1080 * 100vw);
+    padding-top: calc(8 / 920 * 100vw);
   }
   .hospital-information {
-    padding-block: calc(18 / 1080 * 100vw);
-    margin-left: calc(4 / 1080 * 100vw);
+    padding-block: calc(18 / 920 * 100vw);
+    margin-left: calc(4 / 920 * 100vw);
   }
   .hospital-information p {
-    font-size: clamp(1.6rem, calc(18 / 1080 * 100vw), 1.8rem);
+    font-size: calc(18 / 920 * 100vw);
   }
   /*CONTACT*/
   #contact p {
-    font-size: clamp(1.5rem, calc(17 / 1080 * 100vw), 1.7rem);
+    font-size: calc(17 / 920 * 100vw);
     line-height: calc(30 / 17);
-    padding-top: calc(29 / 1080 * 100vw);
+    padding-top: calc(29 / 920 * 100vw);
   }
   form {
-    margin-top: calc(39 / 1080 * 100vw);
+    margin-top: calc(39 / 920 * 100vw);
   }
   .space {
-  margin-bottom: calc(26 / 1080 * 100vw);
+  margin-bottom: calc(26 / 920 * 100vw);
 }
   label {
-    width: calc(169 / 1080 * 100vw);
-    font-size: clamp(1.6rem, calc(20 / 1080 * 100vw), 2rem);
+    width: calc(169 / 920 * 100vw);
+    font-size: calc(20 / 920 * 100vw);
   }
   input[type="text"],
   input[type="email"]{
-    padding: calc(10 / 1080 * 100vw);
-    font-size: clamp(1.5rem, calc(17 / 1080 * 100vw), 1.7rem);
-    height: calc(40 / 1080 * 100vw);
+    padding: calc(10 / 920 * 100vw);
+    font-size: calc(17 / 920 * 100vw);
+    height: calc(40 / 920 * 100vw);
   }
   textarea {
-    height: calc(300 / 1080 * 100vw);
-    padding: calc(15 / 1080 * 100vw);
-    font-size: clamp(1.5rem, calc(17 / 1080 * 100vw), 1.7rem);
+    height: calc(300 / 920 * 100vw);
+    padding: calc(15 / 920 * 100vw);
+    font-size: calc(17 / 1080 * 100vw);
   }
   .button {
-    margin-top: calc(50 / 1080 * 100vw);
+    margin-top: calc(50 / 920 * 100vw);
   }
   input[type="submit"] {
-    font-size: calc(25 / 1080 * 100vw);
-    width: calc(200 / 1080 * 100vw);
-    height: calc(50 / 1080 * 100vw);
-    border-radius: calc(10 / 1080 * 100vw);
+    font-size: calc(25 / 920 * 100vw);
+    width: calc(200 / 920 * 100vw);
+    height: calc(50 / 920 * 100vw);
+    border-radius: calc(10 / 920 * 100vw);
   }
   /*FOOTER*/
   #footer a,
   #footer p {
-    font-size: clamp(1.6rem, calc(20 / 1080 * 100vw), 2rem);
+    font-size: calc(20 / 920 * 100vw);
     line-height: calc(33 / 20);
   }
   .footer-nav {
-    width: calc(737 / 1080 * 100vw);
-    padding-bottom: calc(21 / 1080 * 100vw);
+    width: calc(737 / 920 * 100vw);
+    padding-bottom: calc(21 / 920 * 100vw);
   }
   .footer-nav-list {
-    gap: calc(14 / 1080 * 100vw);
+    gap: calc(14 / 920 * 100vw);
   }
   .copyright  {
-    margin-top: calc(27 / 1080 * 100vw);
+    margin-top: calc(27 / 920 * 100vw);
   }
   .sns-list {
-    gap: calc(12 / 1080 * 100vw);
-    margin-top: calc(8 / 1080 * 100vw);
+    gap: calc(12 / 920 * 100vw);
+    margin-top: calc(8 / 920 * 100vw);
   }
   .icon-twitter {
-    width: clamp(1.7rem, calc(20 / 1080 * 100vw), 2rem);
+    width: calc(20 / 920 * 100vw);
   }
 }
 @media (max-width: 770px) {
@@ -733,7 +728,8 @@ FOOTER
     display: none;
   }
   .inner {
-    padding-inline: calc(20 / 375 * 100vw);
+    max-width: 690px;
+    padding-inline: 2rem;
   }
   /*HEADER*/
   .header-inner {
